@@ -1,0 +1,47 @@
+.toggle-bar {
+position: fixed;
+top: 5px;
+right:5px;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 999999;
+color: var(--color-text)
+}
+.sun-wrapper, .moon-wrapper {
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.toggle-button {
+    position: relative;
+    width: 58px;
+    height: 28px;
+    background-color: var(--color-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    margin: 0 16px;
+    border:none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.toggle-circle {
+    width: 20px;
+    height:20px;
+    position: absolute;
+    left: 6px;
+    background-color: var(--color-background);
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+// .toggle-button:hover .toggle-circle {
+//     transform: scale(.6);
+// }
+
+.slide {
+    transform: translateX(24px);
+  }
